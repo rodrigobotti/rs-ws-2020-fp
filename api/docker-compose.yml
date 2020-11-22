@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    command: npm start
+    ports:
+      - 3001:3001
+    environment:
+      - PORT=3001
+      - AUTH_USERNAME=rocketseat
+      - AUTH_PASSWORD=rocketseat
+      - AUTH_TOKEN_EXPIRATION=1min
+      - AUTH_TOKEN_SECRET=rocketseat
