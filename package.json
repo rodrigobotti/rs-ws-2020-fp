@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon workshop/index.js",
+    "start": "nodemon -q workshop/index.js",
     "api": "docker-compose -f api/docker-compose.yml up -d --build api",
     "api:status": "docker-compose -f api/docker-compose.yml ps",
     "api:kill": "docker-compose -f api/docker-compose.yml down"
